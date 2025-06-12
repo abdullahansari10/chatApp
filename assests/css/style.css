@@ -1,0 +1,242 @@
+
+.toast {
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.chatMsg {
+    height: 80vh;
+    position: relative;
+}
+
+.userMsg {
+    position: relative;
+    background-color: green;
+    width: 25vw;
+    color: white;
+    right: -9px;
+    padding: 10px 6px;
+    left: 625px;
+    margin-bottom: 8px;
+    border-radius: 7px 0px 7px 7px;
+    font-size: 16px;
+}
+
+.userMsg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 14px solid green;
+    border-right: 11px solid transparent
+}
+
+.userTime {
+    position: relative;
+    float: right;
+    bottom: -12px;
+    font-size: 14px;
+}
+
+.botMsg {
+    position: relative;
+    width: 25vw;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    right: -10px;
+    padding: 10px 6px;
+    margin-bottom: 8px;
+    border-radius: 0px 7px 7px 7px;
+}
+
+.botMsg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 14px solid white;
+    /* white triangle to match base */
+    border-left: 11px solid transparent;
+    filter: drop-shadow(-1px 2px 0px rgba(50, 73, 67, 0.3)) drop-shadow(-4px 0 9px rgba(69, 71, 71, 0.15))
+}
+
+.botTime {
+    position: relative;
+    float: right;
+    font-size: 14px;
+    bottom: -11px;
+}
+
+
+#input {
+    width: 60%;
+    padding: 8px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 2px;
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+#send {
+    /* width: 60%; */
+    padding: 7px 16px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 2px;
+    border-radius: 6px;
+    border: 1px solid;
+    right: 122px;
+    font-size: 18px;
+}
+
+
+
+.pages {
+    position: fixed;
+    top: 0;
+    left: 1px;
+    display: flex;
+    padding: 6px 7px;
+    color: white;
+    font-size: 22px;
+    width: 333px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* dropDown */
+.dropDownToggle {
+    background: no-repeat;
+    border: none;
+    color: white;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    right: 10px;
+    top: 45px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
+.dropDownContent a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.dropDownContent a:hover {
+    background-color: #f1f1f1;
+}
+
+.allUsers {
+    margin-top: 60px;
+}
+
+#receiver ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#receiver ol li {
+    padding: 8px 7px;
+    font-size: 16px;
+    margin: 3px 0;
+    border-bottom: 1px solid;
+    color: black;
+}
+
+#receiver ol li:hover {
+    background-color: #F5F6F6;
+    color: black;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.activeUser {
+    background-color: #F5F6F6;
+    border-bottom: none !important;
+}
+
+/* login */
+/* 1 */
+.reg-button {
+    background: #5cc2ed;
+    background: linear-gradient(90deg, rgba(92, 194, 237, 1) 13%, rgba(139, 129, 200, 1) 50%, rgba(118, 171, 221, 1) 100%);
+
+}
+
+#loginWelcome {
+    height: 100vh;
+    background: #5cc2ed;
+    background: linear-gradient(90deg, rgba(92, 194, 237, 1) 13%, rgba(139, 129, 200, 1) 50%, rgba(118, 171, 221, 1) 100%);
+}
+
+.loginMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* 2 */
+.loginPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+}
+
+.loginBox {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+}
+
+#sign-up a {
+    text-decoration: none;
+    position: relative;
+    left: 78px;
+}
+
+/* registration */
+.registration {
+    height: 100vh;
+    background: #5cc2ed;
+    background: linear-gradient(90deg, rgba(92, 194, 237, 1) 13%, rgba(139, 129, 200, 1) 50%, rgba(118, 171, 221, 1) 100%);
+}
+
+.registration-box {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg-box {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+}
