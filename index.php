@@ -26,7 +26,7 @@ $users = $conn->query("SELECT username FROM register WHERE username != '$usernam
     <?php require("./required/header.php") ?>
     <div class="container-fluid main">
         <div class="row h-100">
-            <div class="col-lg-3 h-100 border sideBar px-1">
+            <div class="col-lg-3 border-start border-end sideBar px-1">
                 <div class="pages bg-success">
                     <div class="username-index">
                         <?php echo "Hello " . $username; ?>
