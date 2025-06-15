@@ -58,7 +58,7 @@ if (isset($_SESSION['toastMessage']) && isset($_SESSION['toastColor'])) {
 <body>
     <div class="container-fluid">
         <div class="row h-100">
-            <div class="col-lg-6" id="loginWelcome">
+            <div class="col-lg-6 col-md-6 col-sm-6" id="loginWelcome">
                 <div class="loginMessage h-100">
                     <div class="loginContent">
                         <h2>Welcome To The Website</h2>
@@ -72,7 +72,7 @@ if (isset($_SESSION['toastMessage']) && isset($_SESSION['toastColor'])) {
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <div class="loginPage">
                         <div class="text-center loginBox">

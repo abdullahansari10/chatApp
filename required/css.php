@@ -13,3 +13,4 @@
  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Lateef&family=Mirza&display=swap" rel="stylesheet">
  <!-- CSS -->
  <link rel="stylesheet" href="assests/css/style.css">
+ <link rel="stylesheet" href="assests/css/media.css">

@@ -1,0 +1,135 @@
+/* ====== Desktops (1281px and up) ====== */
+@media (min-width: 1281px) {
+  /* Custom styles for large desktops */
+  .pages{
+    width: 335px !important;
+  }
+}
+
+/* ====== Laptops / Desktops (1025px to 1280px) ====== */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Custom styles for medium desktops/laptops */
+  .pages{
+    width: 300px !important;
+    padding: 4px 30px;
+  }
+  #send{
+    right: 70px;
+  }
+.userMsg {
+    left: 595px !important;
+    width: 21vw !important;
+}
+.botMsg {
+    width: 21vw !important;
+}
+.userTime,
+.botTime {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem; /* ~12px, scales better */
+  margin-top: 4px;
+  opacity: 0.8;
+}
+  /* Custom styles for tablets in landscape */
+  .pages{
+    width: 250px !important;
+    padding: 4px 30px;
+  }
+  #send{
+    right: 50px;
+  }
+}
+
+/* ====== Tablets (Portrait) - (768px to 990px) ====== */
+@media (min-width: 768px) and (max-width: 990px) {
+  /* Custom styles for tablets in portrait */
+  .pages{
+    width: 210px !important;
+    padding: 4px 13px;
+    font-size: 17px;
+  }
+  #input{
+    width:  470px;
+  }
+  #send{
+    right: 30px;
+  }
+  .userMsg {
+    left: 430px !important;
+    width: 18vw !important;
+}
+.botMsg {
+    width: 18vw !important;
+}
+.userTime,
+.botTime {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem; /* ~12px, scales better */
+  margin-top: 4px;
+  opacity: 0.8;
+}
+}
+
+/* ====== Mobiles (Landscape) - (576px to 767px) ====== */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Custom styles for mobile landscape */
+  .pages{
+    width: auto !important;
+    padding: 4px 13px;
+    font-size: 17px;
+  }
+  #input{
+    width: 325px !important;
+  }
+  #send{
+    right: 30px;
+  }
+  .userMsg {
+    left: 320px !important;
+    width: 14vw !important;
+}
+.botMsg {
+    width: 14vw !important;
+}
+.userTime,
+.botTime {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem; /* ~12px, scales better */
+  margin-top: 4px;
+  opacity: 0.8;
+}
+}
+
+/* ====== Mobiles (Portrait) - (up to 575px) ====== */
+@media (max-width: 575px) {
+    .pages{
+    width: auto !important;
+    padding: 4px 13px;
+    font-size: 17px;
+  }
+  #input{
+    width: auto;
+  }
+  #send{
+    right: 40px;
+  }
+  .userMsg {
+    left: 300px !important;
+    width: 14vw !important;
+}
+.botMsg {
+    width: 14vw !important;
+}
+.userTime,
+.botTime {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem; /* ~12px, scales better */
+  margin-top: 4px;
+  opacity: 0.8;
+}
+  /* Custom styles for small mobile devices */
+}

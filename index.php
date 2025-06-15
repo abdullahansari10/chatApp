@@ -26,7 +26,7 @@ $users = $conn->query("SELECT username FROM register WHERE username != '$usernam
     <?php require("./required/header.php") ?>
     <div class="container-fluid main">
         <div class="row h-100">
-            <div class="col-lg-3 border-start border-end sideBar px-1">
+            <div class="col-3 border-start border-end sideBar px-1">
                 <div class="pages bg-success">
                     <div class="username-index">
                         <?php echo "Hello " . $username; ?>
@@ -60,7 +60,7 @@ $users = $conn->query("SELECT username FROM register WHERE username != '$usernam
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 px-1 h-100" style="padding: 0;">
+            <div class="col-9 px-1 h-100" style="padding: 0;">
                 <h4 class="text-center text-white bg-success p-2 border position-fixed w-75"
                     style="z-index: 999; top: 0;">
                     ChatApp
@@ -184,8 +184,8 @@ $users = $conn->query("SELECT username FROM register WHERE username != '$usernam
         $('#send').click(message);
 
         // Fetch messages on load and every 5 seconds
-        fetchMessages();
+        // fetchMessages();
         // setInterval(fetchMessages, 50000);
-        setInterval(fetchMessages, 5000);
+        // setInterval(fetchMessages, 5000);
     </script>
 </body>
