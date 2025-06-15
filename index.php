@@ -185,7 +185,7 @@ $users = $conn->query("SELECT username FROM register WHERE username != '$usernam
 
         // Fetch messages on load and every 5 seconds
         // fetchMessages();
-        // setInterval(fetchMessages, 50000);
-        // setInterval(fetchMessages, 5000);
+        setInterval(fetchMessages, 50000);
+        setInterval(fetchMessages, 5000);
     </script>
 </body>
